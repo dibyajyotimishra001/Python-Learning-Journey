@@ -1,6 +1,6 @@
 # **To-Do-List**
 
-A simple, interactive command-line application written in Python to help you manage your daily tasks effectively.
+A simple, interactive command-line application written in Python to help you manage your daily tasks effectively. It uses a infinite loop and ask you what to do? Features are: 1. Add a Task, 2. View Task, 3. Delete a Task, 4. Exit. When you click on exit it ends the loop.
 
 ## Features
 
