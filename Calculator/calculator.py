@@ -1,34 +1,36 @@
-"""
-Simple Calculator
-A robust calculator script that performs basic arithmetic operations 
-with built-in error handling for invalid inputs and zero division.
-"""
+def calculator(num_1, operator, num_2):
 
-def calculator():
-    try:
-        num1 = float(input("Enter the first number: "))
-        operator = input("Enter the operator (+, -, *, /): ")
-        num2 = float(input("Enter the second number: "))
+    if operator == "+":
+        return num_1 + num_2
+
+    elif operator == "-":
+        return num_1 - num_2
+
+    elif operator == "*":
+        return num_1 * num_2
+
+    elif operator == "/":
+        if num_2 == 0:
+            
+            return "Error Cannot divided by 0"
         
-        if operator == '+':
-            result = num1 + num2
-        elif operator == '-':
-            result = num1 - num2
-        elif operator == '*':
-            result = num1 * num2
-        elif operator == '/':
-            if num2 == 0:
-                print("Error: Division by zero is not allowed.")
-                return
-            result = num1 / num2
-        else:
-            print("Invalid operator. Please use +, -, *, or /.")
-            return
-        
-        print(f"The result of {num1} {operator} {num2} is: {result}")
+        return num_1 / num_2
+    else:
+        return "Error: Invalid input"
     
-    except ValueError:
-        print("Invalid input. Please enter numeric values.")
 
 if __name__ == "__main__":
-    calculator()
+    try:
+        # Input handling outside the logic function
+        num_1 = float(input("Enter the 1st number: "))
+        operator = input("Enter operator (+, -, *, /): ").strip()
+        num_2 = float(input("Enter the 2nd number: "))
+
+        # Calling the function
+        result = calculator(num_1, operator, num_2)
+        
+        # Professional output format
+        print(f"The result is: {result}")
+        
+    except ValueError:
+        print("Error: Invalid input. Please enter numeric values.")
