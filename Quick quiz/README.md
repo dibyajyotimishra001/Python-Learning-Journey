@@ -1,6 +1,6 @@
 # **Quick-Quiz**
 
-A simple and interactive command-line quiz application written in Python to test your general knowledge.
+A simple and interactive command-line quiz application written in Python to test your general knowledge. Also you can modify it
 
 ## Features
 
