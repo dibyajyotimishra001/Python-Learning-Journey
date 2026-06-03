@@ -1,9 +1,5 @@
-Congratulations on clearing your engineering entrance exam! Your hard work has paid off.
-
-Now, focus heavily on the counseling process (JoSAA, CSAB, or State-level counseling).
-
-Research the top colleges you can get based on your rank. Do not just look at the institute's name; analyze the placement records, faculty, and alumni network.
-
-Prioritize highly demanding branches like Computer Science, specifically specializations in Artificial Intelligence and Machine Learning, as they offer immense future scope.
-
-Start learning the basics of programming languages like Python or C before your first semester begins to stay ahead of the curve.
+i. Congratulations on clearing your engineering entrance exam! Your hard work has paid off.
+ii. Now, focus heavily on the counseling process (JoSAA, CSAB, or State-level counseling).
+iii. Research the top colleges you can get based on your rank. Do not just look at the institute's name; analyze the placement records, faculty, and alumni network.
+iv. Prioritize highly demanding branches like Computer Science, specifically specializations in Artificial Intelligence and Machine Learning, as they offer immense future scope.
+v. Start learning the basics of programming languages like Python or C before your first semester begins to stay ahead of the curve.
