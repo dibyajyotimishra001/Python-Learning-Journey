@@ -39,6 +39,7 @@ if choice == '1':
         print("Somthing went wrong, please try selecting corrrect option")
 
 if choice == '2':
+    # third
     print("A. Entrance succeed")
     print("B. Non Entrance succeed")
 
@@ -59,7 +60,7 @@ if choice == '2':
 print("\nIf you like to provide some information, press y or n")
 print("y: yes")
 print("n: No")
-
+# 4th
 choice_3 = input("Enter your choice: ").lower().strip()
 # For user privacy I am not storing these personal info
 
