@@ -13,12 +13,14 @@ name = input("Enter you name: ")
 with open("data.txt", "w") as data_1:
     data_1.write("Name: " + name)
 
+# first
 print("1. Engineering")
 print("2. Medical")
 
 choice = (input("Enter your choice: ")).strip()
 
 if choice == '1':
+    # second
     print("A. Entrance succeed")
     print("B. Non Entrance succeed")
 
