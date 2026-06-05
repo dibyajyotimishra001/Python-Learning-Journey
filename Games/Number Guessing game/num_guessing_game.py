@@ -1,25 +1,32 @@
 import random
+
 try:
     rand_num = random.randint(1, 10)
-    print("Select a number between 1 to 10")
-    user_guess = int(input("Enter your guess: "))
+    print("Select a number between 1 to 10") 
+    
+    negative_marking = 0
+    
+    while True:
+        user_guess = int(input("Enter your guess: "))
 
-    if user_guess > 10 or user_guess < 1:
-        print("Please select a num between 1 to 10")
-    else:
-        negetive_marking = 0
-        while user_guess != rand_num:
-            print("\nYou could not able guess the num")
-            user_guess = int(input("Try again: "))
-            negetive_marking += 1
+        if user_guess > 10 or user_guess < 1:
+            print("Please select a number strictly between 1 to 10")
+            negative_marking += 1
+            continue 
 
-        score = 10 - negetive_marking
+        if user_guess == rand_num:
+            break 
         
-        with open("Score.txt", "a") as score_storage:
-            score_storage.write(f"Your Score: {score}\n")
+        print("\nYou could not guess the number")
+        negative_marking += 1
 
-        print(f"\nYou guessed the num.\nYour score: {score}")
-        print(f"You guessed {user_guess}, and computer {rand_num}")
+    score = 10 - negative_marking
+    
+    with open("Score.txt", "a") as score_storage:
+        score_storage.write(f"Your Score: {score}\n")
+
+    print(f"\nYou guessed the number.\nYour score: {score}")
+    print(f"You guessed {user_guess}, and the computer chose {rand_num}")
 
 except ValueError:
-    print("Something went wrong!")
+    print("Something went wrong! Please enter a valid integer.")
