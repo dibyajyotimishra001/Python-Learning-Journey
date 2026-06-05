@@ -4,16 +4,16 @@ try:
     print("Select a number between 1 to 10")
     user_guess = int(input("Enter your guess: "))
 
-    if user_guess > 10 or user_guess < 0:
+    if user_guess > 10 or user_guess < 1:
         print("Please select a num between 1 to 10")
     else:
-        count = 0
+        negetive_marking = 0
         while user_guess != rand_num:
             print("\nYou could not able guess the num")
             user_guess = int(input("Try again: "))
-            count += 1
+            negetive_marking += 1
 
-        score = rand_num - count # Score will be depend upon the rand_num, also score can be negetive
+        score = 10 - negetive_marking
         
         with open("Score.txt", "a") as score_storage:
             score_storage.write(f"Your Score: {score}\n")
