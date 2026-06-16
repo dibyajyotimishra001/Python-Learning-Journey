@@ -12,17 +12,17 @@ tasks = []
 
 while True:
     print("\nTo-Do-List: select one option\n")
-    print("I. Add New Task")
-    print("II. View Tasks")
-    print("III. Remove a task")
-    print("IV. Exit")
+    print("1. Add New Task")
+    print("2. View Tasks")
+    print("3. Remove a task")
+    print("4. Exit")
 
     user_input = input("Enter 1/2/3/4 to excute: ").strip()
 
     if user_input == "1":
         new_task = input("\nEnter a Task: ")
         tasks.append(new_task)
-        print("\nSuccess: Task Added")
+        print("\nSuccess: Task Added\n")
     
     elif user_input == "2":
         if len(tasks) == 0:
